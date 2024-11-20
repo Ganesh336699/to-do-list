@@ -1,0 +1,75 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+body {
+  background-image: linear-gradient(to right, rgb(44, 13, 60), rgb(101, 41, 28));
+  
+  background-repeat: no-repeat;
+  background-position: bottom right, left, right;
+  background-attachment: fixed; /* Fix the background to the screen */
+  height: 100vh; /* Full viewport height */
+  margin: 0; /* Remove default margin */
+}
+.login {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  margin: 0;
+
+}
+.form-container {
+  width: 400px;             
+  height: 500px;             
+  padding: 20px;    
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* Vertically center the form elements inside the container */
+  align-items: center;  
+  border-radius: 40px; 
+  background-image: linear-gradient(to right, rgb(188, 94, 94), rgb(15, 4, 17));
+  
+  background-repeat: no-repeat;
+  background-position: bottom right, left, right;    /* Horizontally center the form elements inside the container */
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;                 /* Space between form elements */
+}
+
+input {
+  width: 100%;                /* Make inputs take up full width of the form */
+  padding: 5px 0;              /* Add padding for better readability */
+  background-image: linear-gradient(to right, rgb(188, 94, 94), rgb(15, 4, 17)); /* Same background as form */
+  color: white;               /* Make text white for visibility */
+  font-size: 16px;  
+  border: none;              /* Remove the default border */
+  border-bottom: 1px solid #9f8989;  /* Add an underline */
+  background: transparent;   /* Make the background transparent */
+          
+}
+input::placeholder {
+  color: #ccc; 
+  opacity: 1; 
+  font-family:'Times New Roman', Times, serif;
+}
+
+input:focus {
+  outline: none;             /* Remove the default focus outline */
+  border-bottom: 1.5px solid #c8b7b7;  /* Change underline color on focus */
+}
+
+.login-btn  {
+ 
+  background-image: linear-gradient(to right, rgb(63, 46, 108), rgb(128, 42, 143));
+  border: none;  
+  height: 30px;
+  border-radius: 10px;
+  color: #ccc;
+  cursor: pointer;
+  
+}
