@@ -2,7 +2,7 @@ html, body {
   height: 100%;
   margin: 0;
 }
-body {
+.login {
   background-image: linear-gradient(to right, rgb(44, 13, 60), rgb(101, 41, 28));
   
   background-repeat: no-repeat;
@@ -72,4 +72,87 @@ input:focus {
   color: #ccc;
   cursor: pointer;
   
+}
+.home {
+
+  background-color: rgb(76, 78, 80);
+  background-attachment: fixed; /* Fix the background to the screen */
+  display: flex; /* Use flexbox to display child elements in a row */
+  height: auto; /* Full viewport height */
+  width: 100%; /* Full viewport height */
+  margin-top: 0px;
+ 
+}
+
+
+.profile,
+.tasks,
+.stats {
+  padding: 10px;
+  border: 1px solid aliceblue; 
+  box-sizing: border-box; /* Add padding to make it look neat */
+}
+.profile{
+
+  margin-left: 2px;
+  align-items: center;
+  justify-content: center;
+  
+  
+}
+.stats {
+  margin-left: 2px;
+  height:100%
+}
+
+.tasks {
+  width: 100%; /* Tasks section takes 60% of the width */
+}
+
+
+.searchbox {
+
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+ 
+ 
+  
+}
+.searchbox > button {
+  cursor: pointer;
+  border: none;              /* Remove the default border */
+  background: transparent; 
+  background-color: rgb(76, 78, 80);
+  border: solid rgb(22, 22, 22);
+  margin-right: 20px;
+  margin-top: 20px;
+  height: 40px;
+  width: 10%;
+  padding: 10px;
+  margin-left: 2px;
+  border-radius: 10px;
+}
+.searchbox > input {
+
+  margin-left: 20px;
+  padding: 10px;
+  margin-top: 20px;
+  border: solid black;
+  height: 20px;
+  width: 70%;
+  border-radius: 10px;
+}
+
+.pro-stats {
+
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+ 
+  
+}
+.right-side {
+  overflow-y: auto;
+  margin-left: 13%;
 }
