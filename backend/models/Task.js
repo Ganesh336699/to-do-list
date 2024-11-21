@@ -13,18 +13,17 @@ const taskSchema = new mongoose.Schema({
     required: true,
     trim: true,
   },
-  isCompleted: {
-    type: Boolean,
-    default: false,
+  status: {
+    type: String,
+    required: true,
   },
   priority: {
     type: String,
-    enum: ["low", "medium", "high"],
-    default: "medium",
+    required: true,
   },
   dueDate: {
     type: String,
-    required:true,
+    required: true,
   },
   createdAt: {
     type: String,
@@ -36,5 +35,4 @@ const taskSchema = new mongoose.Schema({
   },
 });
 
-
-export  default mongoose.model( "Task", taskSchema);
+export default mongoose.model("Task", taskSchema);
